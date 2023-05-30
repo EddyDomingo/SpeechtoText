@@ -1,0 +1,20 @@
+import speech_recognition as sr
+import pyperclip
+
+
+
+# Create a recognizer object
+r = sr.Recognizer()
+
+# Load the audio file
+audio_file = sr.AudioFile('myVoice.wav')
+
+# Open the audio file and convert speech to text
+with audio_file as source:
+    audio = r.record(source)
+
+# Use Google Cloud Speech API for speech recognition
+text = r.recognize_google(audio)
+
+# Print the transcribed text
+print(text)
