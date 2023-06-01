@@ -3,7 +3,7 @@ import os
 import openai
 
 # Set up your OpenAI API key
-openai.api_key = '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'
+openai.api_key = 'API-KEY'
 
 # # Create a recognizer object
 r = sr.Recognizer()
